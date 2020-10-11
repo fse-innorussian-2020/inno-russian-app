@@ -31,10 +31,12 @@ async function loadTestData(sequelize) {
 
   const payForFood = await sequelize.models.Category.create({
     name: 'Pay for food',
-    parentCategoryId: rest.id,
+    ParentCategoryId: rest.id,
   });
 
-  const card = await sequelize.models.Card.create({});
+  const card = await sequelize.models.Card.create({
+    CategoryId: payForFood.id
+  });
 
   await sequelize.models.Section.create({
     englishText: 'Can I get a check?',
@@ -52,22 +54,31 @@ async function loadTestData(sequelize) {
 
 // TODO: better to rewrite function to use async/await
 // API for ExpressJS, for consistency
-function startHttpServer() {
+function startHttpServer(sequelize) {
   const app = express();
 
-  app.get('/', (req, res) => {
-    res.send('Hello World!')
+  // this request returns all cards that we have in database
+  app.get('/cards.json', async (req, res) => {
+    const cards = await sequelize.models.Card.findAll({});
+    const jsonCards = [];
+    for (const i in cards) {
+      const json = await cards[i].toJSON();
+      jsonCards.push(json);
+    }
+    // console.log(JSON.stringify(jsonCards));
+    res.type('json');
+    res.send(JSON.stringify(jsonCards));
   });
 
   app.listen(HTTP_PORT, () => {
-    console.log(`Example app listening at http://localhost:${HTTP_PORT}`)
+    console.log(`InnoRussian app is listening at http://localhost:${HTTP_PORT}`)
   });
 }
 
 async function main() {
   const sequelize = await setupDB();
   await loadTestData(sequelize);
-  startHttpServer();
+  startHttpServer(sequelize);
 }
 
 main();
