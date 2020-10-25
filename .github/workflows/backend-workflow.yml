@@ -27,8 +27,8 @@ jobs:
         node-version: '14.x'
 
     - name: Install deps
-      run: npm install
+      run: cd backend && npm install
 
     # Runs a single command using the runners shell
     - name: ESLint check
-      run: npx eslint .
+      run: cd backend && npx eslint .
