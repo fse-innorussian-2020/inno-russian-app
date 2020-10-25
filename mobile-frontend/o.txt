@@ -1,0 +1,50 @@
+commit d03438aef84fbc80f03afbdb6d30a97ccdaea515
+Merge: 4bd35b6 02b6cfd
+Author: Vladimir Gordeev <gordeev.vladimir.v@gmail.com>
+Date:   Sun Oct 11 19:33:20 2020 +0300
+
+    Merge pull request #1 from fse-innorussian-2020/feature/vladimir-backend-db-setup
+    
+    Add backend, setup database, return cards via simple HTTP request
+
+commit 02b6cfda0eded677abbd532dab20245131ffc6f2
+Author: Vladimir Gordeev <gordeev.vladimir.v@gmail.com>
+Date:   Sun Oct 11 12:46:33 2020 +0300
+
+    return cards data from db on /cards.json
+
+commit d9805d3c97c4efbb7497c2ec41597b68cefde031
+Author: Vladimir Gordeev <gordeev.vladimir.v@gmail.com>
+Date:   Sat Oct 10 19:25:21 2020 +0300
+
+    add models with example data load
+
+commit 9629a957c09a305177c84904c974aa6baf8f20e1
+Author: Vladimir Gordeev <gordeev.vladimir.v@gmail.com>
+Date:   Sat Oct 10 18:27:42 2020 +0300
+
+    add sequelize ORM for DB work
+
+commit 11ad83c3703313f8824d3e1386e26f96dcabdb3c
+Author: Vladimir Gordeev <gordeev.vladimir.v@gmail.com>
+Date:   Sat Oct 10 17:58:48 2020 +0300
+
+    add hello world in express js
+
+commit 4bd35b62af92a219abf963bb1dee72a071475d01
+Author: Vladimir Gordeev <gordeev.vladimir.v@gmail.com>
+Date:   Fri Oct 9 22:24:23 2020 +0300
+
+    move to frontend dir
+
+commit 9ba8bbf48e3fd27581a5919e9c2c79dc1d17b56e
+Author: Amirov Aldiyar <amirovaldiar@gmail.com>
+Date:   Fri Oct 9 22:08:30 2020 +0300
+
+    initial commit
+
+commit 9cebab6ec1c15ee1d0c6429f93c940b21b6a2e81
+Author: Amirov Aldiyar <amirovaldiar@gmail.com>
+Date:   Mon Sep 28 11:04:24 2020 +0300
+
+    Created a new Expo app
