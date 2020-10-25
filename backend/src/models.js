@@ -9,17 +9,24 @@ class Card extends Model {
       id, englishText, russianText, phoneticText
     }));
 
-    const category0 = await this.getCategory();
-    const { name: categoryName, id: categoryId } = category0;
-    const category1 = { name: categoryName, id: categoryId };
 
-    const parentCategory0 = await category0.getCategory();
-    const { name: parentCategoryName, id: parentCategoryId } = parentCategory0;
-    const parentCategory1 = { name: parentCategoryName, id: parentCategoryId };
+    const categories = [];
+    const category0 = await this.getCategory();
+    if (category0) {
+      const { name: categoryName, id: categoryId } = category0;
+      categories.push({ name: categoryName, id: categoryId });
+
+      const parentCategory0 = await category0.getCategory();
+      if (parentCategory0) {
+        const { name: parentCategoryName, id: parentCategoryId } = parentCategory0;
+        categories.push({ name: parentCategoryName, id: parentCategoryId });
+      }
+    }
+
 
     return {
       id: this.id,
-      categories: [parentCategory1, category1],
+      categories,
       sections: sections1,
     };
   }
