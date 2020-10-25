@@ -17,11 +17,20 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSAppTransportSecurity": {
+          "NSExceptionDomains": {
+            "any": {
+              "NSExceptionAllowsInsecureHTTPLoads": true
+            }
+          }
+        }
+      }
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "description": "empty project"
+    "description": "InnoRussianApplication"
   }
 }

@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { View, StyleSheet, FlatList } from "react-native";
+import CategoryCard from "../Components/CategoryCard";
+import network from "../config/network";
 import Screen from "../Screen";
-import AppText from "../Components/AppText";
-import WordCard from "../Components/WordCard";
 
-const CardListingScreen = (props) => {
+const CategoryListingScreen = (props) => {
   const [cards, setCards] = useState([{ id: "1", name: "nothing" }]);
   const getData = async () => {
     const res = await fetch(network.url + "/cards.json")
@@ -13,25 +13,14 @@ const CardListingScreen = (props) => {
   };
   useEffect(() => {
     getData();
-    getData();
   }, []);
   return (
     <Screen>
         <FlatList
-          data={cards[0].sections}
+          data={cards[0].categories}
           keyExtractor={(card) => card.id}
           renderItem={({ item }) => {
-            return (
-              <WordCard
-                content={
-                  item.englishText +
-                  "\n" +
-                  item.russianText +
-                  "\n" +
-                  item.phoneticText
-                }
-              />
-            );
+            return <CategoryCard title={item.name} />;
           }}
         />
     </Screen>
@@ -42,4 +31,4 @@ const styles = StyleSheet.create({
   container: {},
 });
 
-export default CardListingScreen;
+export default CategoryListingScreen;

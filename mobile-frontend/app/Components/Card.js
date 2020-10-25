@@ -1,25 +1,17 @@
 import React, { useRef } from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, Image } from "react-native";
 import AppText from "./AppText";
 import CardFlip from "react-native-flip-card";
 
-const Card = ({ title, content }) => {
-  const cardRef = useRef();
+const Card = ({ title, content, textColor = "white" }) => {
   return (
-    <View style={{ height: 180 }}>
-      <CardFlip style={styles.container}>
-        <View style={styles.card}>
-          <AppText style={styles.title}>{title}</AppText>
-          <AppText style={styles.text}>{content}</AppText>
-        </View>
-        <View style={styles.card}>
-          <AppText style={styles.title}>{title}</AppText>
-          <AppText style={styles.text}>{content}</AppText>
-        </View>
-      </CardFlip>
+    <View style={styles.card}>
+      <Image source={require("../../assets/heart.png")} style={styles.heart} />
+      <AppText style={[styles.title, { color: textColor }]}>{title}</AppText>
+      {content ? (
+        <AppText style={[styles.text, { color: textColor }]}>{content}</AppText>
+      ) : null}
     </View>
-    // <View style={styles.container}>
-    // </View>
   );
 };
 
@@ -32,12 +24,18 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: "tomato",
-    flexDirection: "column",
     paddingHorizontal: 10,
   },
+  heart: {
+    width: 35,
+    height: 35,
+    position: "absolute",
+    top: 15,
+    right: 5,
+  },
   card: {
-    flex: 1,
-    width: "100%",
+    height: "100%",
+    width: 350,
     justifyContent: "center",
     alignItems: "center",
   },
