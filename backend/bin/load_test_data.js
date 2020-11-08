@@ -4,7 +4,7 @@ import sequelizePkg from 'sequelize';
 import { DB_FILE } from '../src/config.js';
 import { loadModels } from '../src/models.js';
 
-import loadTestData from '../testdata.js';
+import loadTestData from '../src/testdata.js';
 
 const { Sequelize } = sequelizePkg;
 
