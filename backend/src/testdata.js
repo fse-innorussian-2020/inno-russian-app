@@ -1,9 +1,9 @@
 import fs from 'fs';
 
-import {} from './src/models.js';
+import {} from './models.js';
 
 export default async function loadTestData(sequelize) {
-  const data = fs.readFileSync('testdata.json');
+  const data = fs.readFileSync('./data/testdata.json');
   const sections = JSON.parse(data);
 
   const card = await sequelize.models.Card.create({});
