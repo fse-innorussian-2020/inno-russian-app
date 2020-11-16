@@ -8,11 +8,12 @@ import WordCard from "./app/Components/WordCard";
 import CardListingScreen from "./app/Screens/CardListingScreen";
 import { NavigationContainer } from "@react-navigation/native";
 import BottomTabNavigation from "./app/navigation/BottomTabNavigation";
+import AppNavigation from "./app/navigation/AppNavigation"
 
 export default function App() {
   return (
     <NavigationContainer>
-      <BottomTabNavigation />
+      <AppNavigation />
     </NavigationContainer>
   );
 }

@@ -11,11 +11,9 @@ const WordCard = ({ title, content }) => {
       <CardFlip style={[styles.container]}>
         <Card
           title={title}
-          content={content}
           textColor={colors.situationSecondary}
         />
         <Card
-          title={title}
           content={content}
           textColor={colors.situationSecondary}
         />
@@ -51,6 +49,7 @@ const styles = StyleSheet.create({
   text: {
     color: "white",
   },
+
 });
 
 export default WordCard;

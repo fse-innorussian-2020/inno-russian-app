@@ -3,6 +3,8 @@ import { View, StyleSheet, FlatList } from "react-native";
 import Screen from "../Screen";
 import AppText from "../Components/AppText";
 import WordCard from "../Components/WordCard";
+import network from "../config/network"
+import cache from "../utility/cache"
 
 const CardListingScreen = (props) => {
   const [cards, setCards] = useState([{ id: "1", name: "nothing" }]);
@@ -12,8 +14,10 @@ const CardListingScreen = (props) => {
       .then((res) => setCards(res)).catch(e => console.log(e));
   };
   useEffect(() => {
-    getData();
-    getData();
+    cache.get("ALL").then(res => {
+      console.log(res)
+      setCards(res)
+    })
   }, []);
   return (
     <Screen>
@@ -23,9 +27,8 @@ const CardListingScreen = (props) => {
           renderItem={({ item }) => {
             return (
               <WordCard
+                title={item.englishText}
                 content={
-                  item.englishText +
-                  "\n" +
                   item.russianText +
                   "\n" +
                   item.phoneticText
