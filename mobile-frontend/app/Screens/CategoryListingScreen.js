@@ -1,26 +1,33 @@
 import React, { useEffect, useState } from "react";
-import { View, StyleSheet, FlatList } from "react-native";
+import { View, StyleSheet, FlatList, TouchableWithoutFeedback } from "react-native";
+import { TouchableOpacity } from "react-native-gesture-handler";
 import CategoryCard from "../Components/CategoryCard";
 import network from "../config/network";
 import Screen from "../Screen";
+import cache from "../utility/cache"
 
-const CategoryListingScreen = (props) => {
-  const [cards, setCards] = useState([{ id: "1", name: "nothing" }]);
+const CategoryListingScreen = ({navigation}) => {
+  const [cards, setCards] = useState([]);
   const getData = async () => {
     const res = await fetch(network.url + "/cards.json")
       .then((res) => res.json())
-      .then((res) => setCards(res)).catch(e => console.log(e));
+      .then((res) => cache.store("ALL",res)).catch(e => console.log(e));
   };
   useEffect(() => {
     getData();
+    cache.get("ALL").then(res => {
+      console.log(res)
+      setCards([res[0].categories[0],])
+      console.log(cards)
+    })
   }, []);
   return (
     <Screen>
         <FlatList
-          data={cards[0].categories}
+          data={cards}
           keyExtractor={(card) => card.id}
           renderItem={({ item }) => {
-            return <CategoryCard title={item.name} />;
+            return <TouchableOpacity onPress={()=>navigation.navigate("SubCategories", [1,])}><CategoryCard title={item.name} /></TouchableOpacity>;
           }}
         />
     </Screen>
