@@ -1,262 +1,367 @@
 [
   {
-    "russianText": "Здравствуйте!",
-    "phoneticText": "[zdrastvooytye]",
-    "englishText": "Hello! (formal)"
+    "categories": [
+      {"name": "At the hospital"},
+      {"name": "Health care"}
+    ],
+    "sections": [
+      {
+        "russianText": "Мне плохо.",
+        "phoneticText": "[mne ploha]",
+        "englishText": "I feel unwell."
+      },
+      {
+        "russianText": "У меня болит голова/живот.",
+        "phoneticText": "[u minya balit galava/zhyvot]",
+        "englishText": "I have a headache/stomachache"
+      },
+      {
+        "russianText": "Меня укачало.",
+        "phoneticText": "[minya ukachala]",
+        "englishText": "I feel car sick."
+      }
+    ]
   },
+
   {
-    "russianText": "Привет!",
-    "phoneticText": "[preevyet]",
-    "englishText": "Hi! (informal)"
+    "categories": [
+      {"name": "Dishes"},
+      {"name": "At the restaurant"}
+    ],
+    "sections": [
+      {
+        "russianText": "Закуска",
+        "phoneticText": "[zakuska]",
+        "englishText": "Starter"
+      },
+      {
+        "russianText": "Салат",
+        "phoneticText": "[salat]",
+        "englishText": "Salad"
+      },
+      {
+        "russianText": "Горячее блюдо",
+        "phoneticText": "[garyachee blyuda]",
+        "englishText": "Main course"
+      },
+      {
+        "russianText": "Десерт",
+        "phoneticText": "[desert]",
+        "englishText": "Dessert"
+      },
+      {
+        "russianText": "Курица",
+        "phoneticText": "[kuritsa]",
+        "englishText": "chicken"
+      },
+      {
+        "russianText": "Телятина",
+        "phoneticText": "[tilyatina]",
+        "englishText": "veal"
+      },
+      {
+        "russianText": "Говядина",
+        "phoneticText": "[gavyadina]",
+        "englishText": "beef"
+      },
+      {
+        "russianText": "Свинина",
+        "phoneticText": "[svinina]",
+        "englishText": "pork"
+      },
+      {
+        "russianText": "Вино",
+        "phoneticText": "[vino]",
+        "englishText": "wine"
+      },
+      {
+        "russianText": "Чай (зелёный/чёрный/фруктовый)",
+        "phoneticText": "[chay (zelionyy, chernyy, fruktovyy)]",
+        "englishText": "Tea (green, black, fruit)"
+      },
+      {
+        "russianText": "Молоко",
+        "phoneticText": "[malako]",
+        "englishText": "Milk"
+      },
+      {
+        "russianText": "Кофе с молоком",
+        "phoneticText": "[kofe s malakom]",
+        "englishText": "Coffeee with milk"
+      },
+      {
+        "russianText": "Напитки",
+        "phoneticText": "[napitki]",
+        "englishText": "Drinks/beverages"
+      }
+    ]
   },
+
   {
-    "russianText": "Доброе утро!",
-    "phoneticText": "[dobrae utra]",
-    "englishText": "Good morning"
+    "categories": [
+      {"name":"Useful phrases"},
+      {"name":"At the restaurant"}
+    ],
+    "sections": [
+      {
+        "russianText": "Столик на двоих (троих, четверых), пожалуйста",
+        "phoneticText": "[stolik na dvaih (traih, chetveryh) pazalusta]",
+        "englishText": "A table for 2 (3,4) please"
+      },
+
+      {
+        "russianText": "Можно меню, пожалуйста?",
+        "phoneticText": "[mozhna minyu, pazhaluta]",
+        "englishText": "Can I have the menu please?"
+      },
+      {
+        "russianText": "Я буду...",
+        "phoneticText": "[ya budu]",
+        "englishText": "I will have…"
+      },
+      {
+        "russianText": "Можно кофе/чай/красное вино, пожалуйста?",
+        "phoneticText": "[mozhna kofe/ chay/krasnae/belaye vino pazhalusta]",
+        "englishText": "Can I have a coffee/tea/red/white wine please?"
+      },
+      {
+        "russianText": "Это блюдо холодное.",
+        "phoneticText": "[eta blyuda halodnaye]",
+        "englishText": "This dish is cold."
+      },
+      {
+        "russianText": "Подогрейте его, пожалуйста.",
+        "phoneticText": "[padagrejte evo pazhalusta]",
+        "englishText": "Warm it up please"
+      },
+      {
+        "russianText": "Можно, пожалуйста, стакан воды?",
+        "phoneticText": "[mozhna pazhalusta stakan vady]",
+        "englishText": "Can I have a glass of water please?"
+      },
+      {
+        "russianText": "Приятного аппетита!",
+        "phoneticText": "[priyatnaga appitita]",
+        "englishText": "Enjoy your meal!"
+      },
+      {
+        "russianText": "Можно счёт, пожалуйста?",
+        "phoneticText": "[mozhna schet pazalusta]",
+        "englishText": "Can I have the check please?"
+      },
+      {
+        "russianText": "Здесь можно курить?",
+        "phoneticText": "[zdes’ mozhna kurit’]",
+        "englishText": "Can I smoke here?"
+      },
+      {
+        "russianText": "Какой пароль вай-фай?",
+        "phoneticText": "[kakoj parol’vay-fay]",
+        "englishText": "What is the Wi-Fi password?"
+      },
+      {
+        "russianText": "У вас есть вегетарианские блюда?",
+        "phoneticText": "[u vas est vegitarianskie blyuda]",
+        "englishText": "Do you have any vegetarian dishes?"
+      }
+    ]
   },
+
   {
-    "russianText": "Добрый день!",
-    "phoneticText": "[obry den’]",
-    "englishText": "Hello! Good afternoon (formal)"
+    "categories": [
+      {"name":"Basic communication"},
+      {"name": "General"}
+    ],
+    "sections": [
+      {
+        "russianText": "Не за что",
+        "phoneticText": "[ne za chta]",
+        "englishText": "No problem (you are welcome)"
+      },
+      {
+        "russianText": "Пожалуйста",
+        "phoneticText": "[pazhalusta]",
+        "englishText": "You are welcome/please"
+      },
+      {
+        "russianText": "Извините",
+        "phoneticText": "[izvinite]",
+        "englishText": "Excuse me/sorry"
+      },
+      {
+        "russianText": "Я не понимаю",
+        "phoneticText": "[ja ni panimaju]",
+        "englishText": "I don’t understand"
+      },
+      {
+        "russianText": "Я понимаю",
+        "phoneticText": "[ja panimaju]",
+        "englishText": "I understand"
+      },
+      {
+        "russianText": "Вы говорите по-английски?",
+        "phoneticText": "[vy gavarite pa angliyski]",
+        "englishText": "Do you speak English?"
+      },
+      {
+        "russianText": "Я не говорю по-русски",
+        "phoneticText": "[ya ni gavaryu pa rooski]",
+        "englishText": "I don’t speak Russian"
+      },
+
+      {
+        "russianText": "Я немного говорю по-русски",
+        "phoneticText": "[ya nimnogo gavaryu pa rooski]",
+        "englishText": "I speak a little Russian"
+      },
+
+      {
+        "russianText": "Повторите, пожалуйста",
+        "phoneticText": "[pavtarite, pazhalusta]",
+        "englishText": "Could you please repeat"
+      },
+
+      {
+        "russianText": "Помогите, пожалуйста.",
+        "phoneticText": "[pamagite pazhalusta]",
+        "englishText": "Could you help me please?"
+      },
+
+      {
+        "russianText": "Я потерялся. (masculine)",
+        "phoneticText": "[ya patiryalsya]",
+        "englishText": "I got lost."
+      },
+      {
+        "russianText": "Я потерялась. (feminine)",
+        "phoneticText": "[ya patiryalas]",
+        "englishText": "I got lost."
+      },
+      {
+        "russianText": "Спасибо за помощь.",
+        "phoneticText": "[spasiba za pomasch]",
+        "englishText": "Thank you for your help."
+      }
+    ]
   },
+
   {
-    "russianText": "Добрый вечер!",
-    "phoneticText": "[dobryj vecher]",
-    "englishText": "Good evening!"
+    "categories": [
+      {"name":"Basic communication"},
+      {"name": "General"}
+    ],
+    "sections": [
+      {
+        "russianText": "Здравствуйте!",
+        "phoneticText": "[zdrastvooytye]",
+        "englishText": "Hello! (formal)"
+      },
+      {
+        "russianText": "Привет!",
+        "phoneticText": "[preevyet]",
+        "englishText": "Hi! (informal)"
+      },
+      {
+        "russianText": "Доброе утро!",
+        "phoneticText": "[dobrae utra]",
+        "englishText": "Good morning"
+      },
+      {
+        "russianText": "Добрый день!",
+        "phoneticText": "[obry den’]",
+        "englishText": "Hello! Good afternoon (formal)"
+      },
+      {
+        "russianText": "Добрый вечер!",
+        "phoneticText": "[dobryj vecher]",
+        "englishText": "Good evening!"
+      },
+      {
+        "russianText": "Как ваши дела?",
+        "phoneticText": "[kak vashi dila]",
+        "englishText": "How are you? (formal, polite)"
+      },
+      {
+        "russianText": "Как твои дела?",
+        "phoneticText": "[kak tvai dila]",
+        "englishText": "How are you? (informal, used when you address someone as ‘ты’)"
+      },
+      {
+        "russianText": "Хорошо, спасибо",
+        "phoneticText": "[harasho, spasiba]",
+        "englishText": "Well, thank you"
+      },
+      {
+        "russianText": "Плохо",
+        "phoneticText": "[plokha]",
+        "englishText": "Bad"
+      },
+      {
+        "russianText": "До свиданья!",
+        "phoneticText": "[da svidan’ja]",
+        "englishText": "Goodbye!"
+      },
+
+      {
+        "russianText": "Пока!",
+        "phoneticText": "[paka]",
+        "englishText": "Bye! (informal)"
+      },
+
+      {
+        "russianText": "Спокойной ночи!",
+        "phoneticText": "[spakojnaj nochi]",
+        "englishText": "Good night!"
+      },
+      {
+        "russianText": "Увидимся!",
+        "phoneticText": "[uvidimsya]",
+        "englishText": "See you!"
+      },
+      {
+        "russianText": "Хорошего дня!",
+        "phoneticText": "[haroshiva dnya]",
+        "englishText": "Have a good day!"
+      },
+      {
+        "russianText": "Хороших выходных!",
+        "phoneticText": "[haroshih vyhadnyh]",
+        "englishText": "Have a nice weekend!"
+      },
+      {
+        "russianText": "Счастливого пути!",
+        "phoneticText": "[schislivava puti]",
+        "englishText": "Have a nice trip!"
+      }
+    ]
   },
+
   {
-    "russianText": "Как ваши дела?",
-    "phoneticText": "[kak vashi dila]",
-    "englishText": "How are you? (formal, polite)"
-  },
-  {
-    "russianText": "Как твои дела?",
-    "phoneticText": "[kak tvai dila]",
-    "englishText": "How are you? (informal, used when you address someone as ‘ты’)"
-  },
-  {
-    "russianText": "Хорошо, спасибо",
-    "phoneticText": "[harasho, spasiba]",
-    "englishText": "Well, thank you"
-  },
-  {
-    "russianText": "Плохо",
-    "phoneticText": "[plokha]",
-    "englishText": "Bad"
-  },
-  {
-    "russianText": "До свиданья!",
-    "phoneticText": "[da svidan’ja]",
-    "englishText": "Goodbye!"
-  },
-  {
-    "russianText": "Пока!",
-    "phoneticText": "[paka]",
-    "englishText": "Bye! (informal)"
-  },
-  {
-    "russianText": "Спокойной ночи!",
-    "phoneticText": "[spakojnaj nochi]",
-    "englishText": "Good night!"
-  },
-  {
-    "russianText": "Увидимся!",
-    "phoneticText": "[uvidimsya]",
-    "englishText": "See you!"
-  },
-  {
-    "russianText": "Хорошего дня!",
-    "phoneticText": "[haroshiva dnya]",
-    "englishText": "Have a good day!"
-  },
-  {
-    "russianText": "Хороших выходных!",
-    "phoneticText": "[haroshih vyhadnyh]",
-    "englishText": "Have a nice weekend!"
-  },
-  {
-    "russianText": "Меня зовут…",
-    "phoneticText": "[minya zavoot]",
-    "englishText": "My name is…"
-  },
-  {
-    "russianText": "Как вас зовут?",
-    "phoneticText": "[kak vas zavoot]",
-    "englishText": "What is your name? (formal, when speaking to an older person)"
-  },
-  {
-    "russianText": "Как тебя зовут?",
-    "phoneticText": "[kak tibya zavoot]",
-    "englishText": "What is your name (informal, with someone you can ‘ты’)"
-  },
-  {
-    "russianText": "Рад(а) познакомиться",
-    "phoneticText": "[rad(a) poznakomit'sya]",
-    "englishText": "Pleased to meet you (masc. or fem. with the ending -a)"
-  },
-  {
-    "russianText": "Счастливого пути!",
-    "phoneticText": "[schislivava puti]",
-    "englishText": "Have a nice trip!"
-  },
-  {
-    "russianText": "Не за что",
-    "phoneticText": "[ne za chta]",
-    "englishText": "No problem (you are welcome)"
-  },
-  {
-    "russianText": "Пожалуйста",
-    "phoneticText": "[pazhalusta]",
-    "englishText": "You are welcome/please"
-  },
-  {
-    "russianText": "Извините",
-    "phoneticText": "[izvinite]",
-    "englishText": "Excuse me/sorry"
-  },
-  {
-    "russianText": "Я не понимаю",
-    "phoneticText": "[ja ni panimaju]",
-    "englishText": "I don’t understand"
-  },
-  {
-    "russianText": "Я понимаю",
-    "phoneticText": "[ja panimaju]",
-    "englishText": "I understand"
-  },
-  {
-    "russianText": "Вы говорите по-английски?",
-    "phoneticText": "[vy gavarite pa angliyski]",
-    "englishText": "Do you speak English?"
-  },
-  {
-    "russianText": "Я не говорю по-русски",
-    "phoneticText": "[ya ni gavaryu pa rooski]",
-    "englishText": "I don’t speak Russian"
-  },
-  {
-    "russianText": "Я немного говорю по-русски",
-    "phoneticText": "[ya nimnogo gavaryu pa rooski]",
-    "englishText": "I speak a little Russian"
-  },
-  {
-    "russianText": "Повторите, пожалуйста",
-    "phoneticText": "[pavtarite, pazhalusta]",
-    "englishText": "Could you please repeat"
-  },
-  {
-    "russianText": "Туалет",
-    "phoneticText": "[tualet]",
-    "englishText": "bathroom"
-  },
-  {
-    "russianText": "Извините, где здесь туалет?",
-    "phoneticText": "[izvinite gde zdes' tualet?]",
-    "englishText": "Excuse me, where is a bathroom?"
-  },
-  {
-    "russianText": "Где находится вокзал?",
-    "phoneticText": "[gde vakzal]",
-    "englishText": "Where is the railway station?"
-  },
-  {
-    "russianText": "Где находится автовокзал?",
-    "phoneticText": "[gde nahoditsya avtovakzal]",
-    "englishText": "Where is the bus station?"
-  },
-  {
-    "russianText": "Где находится метро?",
-    "phoneticText": "[gde nahoditsya metro]",
-    "englishText": "Where is the metro?"
-  },
-  {
-    "russianText": "Где находится супермаркет?",
-    "phoneticText": "[gde nahoditsya supermarket]",
-    "englishText": "Where is a supermarket?"
-  },
-  {
-    "russianText": "Где находится больница?",
-    "phoneticText": "[gde nahoditsya balnitsa]",
-    "englishText": "Where is the hospital?"
-  },
-  {
-    "russianText": "Где находится аптека?",
-    "phoneticText": "[gde nahoditsya apteka]",
-    "englishText": "Where is a pharmacy?"
-  },
-  {
-    "russianText": "Мне плохо.",
-    "phoneticText": "[mne ploha]",
-    "englishText": "I feel unwell."
-  },
-  {
-    "russianText": "У меня болит голова/живот.",
-    "phoneticText": "[u minya balit galava/zhyvot]",
-    "englishText": "I have a headache/stomachache."
-  },
-  {
-    "russianText": "Меня укачало.",
-    "phoneticText": "[minya ukachala]",
-    "englishText": "I feel car sick."
-  },
-  {
-    "russianText": "Идите прямо.",
-    "phoneticText": "[idite pryamo]",
-    "englishText": "Go straight."
-  },
-  {
-    "russianText": "Поверните направо.",
-    "phoneticText": "[pavirnite aprawo]",
-    "englishText": "Turn right."
-  },
-  {
-    "russianText": "Поверните налево.",
-    "phoneticText": "[pavirnite nalevo]",
-    "englishText": "Turn left."
-  },
-  {
-    "russianText": "Помогите, пожалуйста.",
-    "phoneticText": "[pamagite pazhalusta]",
-    "englishText": "Could you help me please?"
-  },
-  {
-    "russianText": "Я потерялся. (masculine)",
-    "phoneticText": "[ya patiryalsya]",
-    "englishText": "I got lost."
-  },
-  {
-    "russianText": "Я потерялась. (feminine)",
-    "phoneticText": "[ya patiryalas]",
-    "englishText": "I got lost."
-  },
-  {
-    "russianText": "Мне нужен обменный пункт.",
-    "phoneticText": "[mne nuzhen obmennyy punkt]",
-    "englishText": "I need a currency exchange booth."
-  },
-  {
-    "russianText": "Где находится билетная касса?",
-    "phoneticText": "[gde nahoditsya biletnaya kasa]",
-    "englishText": "Where is the ticket office?"
-  },
-  {
-    "russianText": "Вы можете разбить 1000 рублей?",
-    "phoneticText": "[by mozhite razbit’ tysyuachu rubley]",
-    "englishText": "Could you break a 1000 bill please?"
-  },
-  {
-    "russianText": "Как добраться в аэропорт?",
-    "phoneticText": "[kak dobratsyua v aeroport]",
-    "englishText": "How can I get to the airport?"
-  },
-  {
-    "russianText": "Где купить стартовый пакет?",
-    "phoneticText": "[dge kupit’ startavyy paket]",
-    "englishText": "Where can I buy a pre-paid SIM-card?"
-  },
-  {
-    "russianText": "Спасибо за помощь.",
-    "phoneticText": "[spasiba za pomasch]",
-    "englishText": "Thank you for your help."
+    "categories": [
+      {"name":"Basic communication"},
+      {"name": "General"}
+    ],
+    "sections": [
+      {
+        "russianText": "Меня зовут…",
+        "phoneticText": "[minya zavoot]",
+        "englishText": "My name is…"
+      },
+      {
+        "russianText": "Как вас зовут?",
+        "phoneticText": "[kak vas zavoot]",
+        "englishText": "What is your name? (formal, when speaking to an older person)"
+      },
+      {
+        "russianText": "Как тебя зовут?",
+        "phoneticText": "[kak tibya zavoot]",
+        "englishText": "What is your name (informal, with someone you can ‘ты’)"
+      },
+      {
+        "russianText": "Рад(а) познакомиться",
+        "phoneticText": "[rad(a) poznakomit'sya]",
+        "englishText": "Pleased to meet you (masc. or fem. with the ending -a)"
+      }
+    ]
   }
 ]
